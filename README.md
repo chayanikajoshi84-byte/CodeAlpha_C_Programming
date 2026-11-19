@@ -33,3 +33,17 @@
 
 ## Author
 Chayanika Joshi
+
+## How to Run
+
+### Task 1
+gcc Task1_Calculator.c -o Calculator
+./Calculator
+
+### Task 2
+gcc Task2_MatrixOperations.c -o Task2
+./Task2
+
+### Task 3
+gcc Task3_StudentManagement.c -o Task3
+./Task3
