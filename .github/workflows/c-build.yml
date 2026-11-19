@@ -1,0 +1,24 @@
+name: C Build Test
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install GCC
+        run: sudo apt-get update && sudo apt-get install -y gcc
+
+      - name: Compile Calculator
+        run: gcc Task1_Calculator.c -o Calculator
+
+      - name: Compile Matrix Operations
+        run: gcc Task2_MatrixOperations.c -o Task2
+
+      - name: Compile Student Management
+        run: gcc Task3_StudentManagement.c -o Task3
